@@ -1,5 +1,6 @@
 streamlit
 pandas
-seaborn y matplotlib
+seaborn
+matplotlib
 plotly
 scikit-learn
