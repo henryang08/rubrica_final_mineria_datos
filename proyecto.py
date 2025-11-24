@@ -22,7 +22,7 @@ basado en las dimensiones de sus pétalos y sépalos.
 @st.cache_data 
 def load_data():
     try:
-        df = pd.read_csv("Iris.csv")
+        df = pd.read_csv("iris_final.csv")
         
         if 'Id' in df.columns:
             df = df.drop(columns=['Id'])
@@ -171,4 +171,5 @@ if not df.empty:
         st.pyplot(fig_corr)
 
 else:
+
     st.warning("Esperando archivo de datos...")
